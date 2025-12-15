@@ -4,23 +4,6 @@ namespace Task5_GradeCalculator
 {
     // This class is for checking a student's grade.
     // It has one method that returns A, B, C, D, or F.
-    class StudentGrade
-    {
-        public string GetGrade(int mark)
-        {
-            // Very simple grading logic.
-            if (mark >= 80)
-                return "A";
-            else if (mark >= 70)
-                return "B";
-            else if (mark >= 60)
-                return "C";
-            else if (mark >= 50)
-                return "D";
-            else
-                return "F";
-        }
-    }
 
     class Program
     {
@@ -58,11 +41,13 @@ namespace Task5_GradeCalculator
 
             // Call the Grade method
             string grade = sg.GetGrade(mark);
-
+            Console.WriteLine("The student's mark is: " + mark);
             Console.WriteLine("The student's grade is: " + grade);
 
-            Console.WriteLine("\nPress any key to exit...");
+            Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
+
+           
         }
     }
 }
